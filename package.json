@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "frontend": "npm start --prefix review_app",
+    "frontend": "npm start --prefix reviews_app",
     "dev": "concurrently \"npm run server\" \"npm start --prefix review_app\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix review_app && INLINE_RUNTIME_CHUNK=false npm run build --prefix review_app"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix reviews_app && INLINE_RUNTIME_CHUNK=false npm run build --prefix reviews_app"
   },
  "engines": {
     "node": "12.18.3"
