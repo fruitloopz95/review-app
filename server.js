@@ -70,7 +70,7 @@ const path = require('path');
 if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('review_app/build'));
 	app.get('*', (req, res) => {
-		res.sendFile(path.resolve(__dirname, 'review_app', 'build', 'index.html'));
+		res.sendFile(path.resolve(__dirname, 'reviews_app', 'build', 'index.html'));
 	});
 }
 
